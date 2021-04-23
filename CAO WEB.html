@@ -145,18 +145,15 @@ Link:<a href="HTTPS://WWW.HACKERRANK.COM/CERTIFICATES/72373146274F"> HTTPS://WWW
 <div class="row pt-5">
 
 <div class="col-12">
-<h2>ASSIGNMENT TASK LINKS</h2>
+<h2>ASSIGNMENT EXPLANATION</h2>
 </div>
 
 <span style="font-size:20px">
 
-<ul>
-<li>TASK 1: <a href="">UNIVERSITY FOOTBALL TEAM</a></li>
-<li>TASK 2: <a href="">UNIVERSITY FOOTBALL TEAM</a></li>
+In task1 we have simply been working with the 32 bit mode and basic setup of the OS. First we have downloaded the docker for running our OS in container and produce a docker image for our OS to run which separately runs on a subsystem. Then we have qemu to see our OS results. In  src implementation  folder we have our assembly code in main.asm file and header.asm file which are basically the assembly files. header.asm contains information about our header like length of our header and magicnumber which is our multiboot2 that is our OS choosing number. Then in main.asm we have defined our entry point of the OS which is defined by start global variable. Target folder contains our linker.Id file which conains data about converting from object to linker file. Iso folder contains code for booting which is kernel.bin binary file .In Makefile we have defined source files and object files and build instructions and booting info. 
+<br />
+Then in second task we have taken the OS to 64 bit and implemented stack structure. We have put our code for stack in main.asm in which we have put differenct checks like for multiboot,long mode and  cpuid etc. We have given the stack bottom and stack top. After that we implemented paging for virtual to physical address mapping via page tables namely l4,l3,l2 and subsequently coded for enabling paging and long mode. We created a new folder main64.asm in which we have called kernel_main which contains our printing code to be displayed. Kernel_main contains c language code for printing. In interface folder we have mentioed the printing functions to be used. Again moving back to x_86 folder we have deifned the blueprint of our functions in print.c file for differenct cases.
 
-
-
-</ul>
 
 </span>
 
